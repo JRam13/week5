@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MeetUpAPP</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+	 <div class="container">
+  <div class="row">
+    <div class="span12 page-header meetup">
+      <h1>Meetup App</h1>
+      <nav>
+      <%= link_to "Events", events_url %> |
+      <%= link_to "Venues", venues_url %>
+    </nav>
+    </div>
+  </div>
+
+<%= yield %>
+
+  <footer>
+    &copy;2013 CSPP 52553, Jonny Ramos
+  </footer>
+
+</body>
+</html>
+
